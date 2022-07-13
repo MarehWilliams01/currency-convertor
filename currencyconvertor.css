@@ -1,0 +1,161 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(background/micheile-dot-com-ZVprbBmT8QA-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;    
+    background-color: rgba(255, 255, 255, 1.5);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.convertor {
+    padding: 0px 50px 0px 50px; 
+    border-radius: 20px;
+    width: 600px;
+    height: 100%;
+    background: rgba(242, 215, 217, 0.3);
+    border-radius: 16px 0px 0px 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.7px);
+    -webkit-backdrop-filter: blur(6.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;   
+}
+
+.header {
+    width: 600px;
+    height: 90px;
+    padding-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding-bottom: 15px;
+    margin: 0px 5px 0px 5px;
+}
+
+.border-line {
+    width: 400px;
+    height: 2px;
+    display: flex;
+    align-self: center;
+    border-bottom: 5px solid #E7AB79;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.heading {
+    font-weight: 500;
+    font-size: 50px;
+    color: #064663;
+    letter-spacing: 5px;  
+}
+
+.currency-icon {
+    align-self: center;
+    justify-self: center;
+}
+
+.line {
+    display: inline-block;
+    width: 200px;
+    border-bottom: 5px solid #E7AB79;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.image {
+    width: 80px;
+}
+
+div .input {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+select {
+    width: 40%;
+    height: 40px;
+    font-size: 1em;
+    cursor: pointer;
+    background: #EFEAD8;
+    outline: none;
+    color: black;
+    padding: 0 2em;
+    border: none;
+    border-radius: 20px;
+}
+
+.amount {
+    width: 55%;
+    height: 40px;
+    font-size: 1em;
+    background: #D3CEDF;
+    outline: none;
+    color: black;
+    padding: 0 2em;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn{
+    align-self: center;
+}
+
+button {
+    padding: 1.3em 8em;
+    outline: none;
+    background: #748DA6;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    transition: all 500ms ease-in-out;
+}
+
+button:hover, button:focus {
+    background-color: #F2D7D9;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+
+@media (max-width: 600px) {
+    .convertor {
+        width: 30em;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .currency-icon {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .line {
+        width: 150px;
+        height: 1px;
+        border-radius: 20px;
+        margin-top: 40px;
+    }
+
+    .image {
+        justify-self: center;
+    }
+
+    .convertor {
+        border-radius: 16px;
+    }
+}
